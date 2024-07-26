@@ -1,0 +1,114 @@
+<div class="sidebar-nav" *ngIf="isMobile">
+  <nav class="navbar navbar-dark shadow-5-strong fixed-top d-flex justify-content-end ">
+    <!-- <div class="container"> -->
+    <!-- Mobile Menu Toggle Button -->
+    <!-- Menus List -->
+    <div class="offcanvas offcanvas-end shadow bg-dark" tabindex="-1" id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li><a href="#"><span class="item-text">Home</span></a></li>
+          <li><a href="#about-US"><span class="item-text">About us</span></a></li>
+          <li>
+            <span class="item-text" style="color: rgb(161, 174, 158); font-weight: bold;">Products</span>
+            <ul class="navbar-nav">
+              <li><a href="/fresh-flowers"><i class="bi bi-calendar3"></i> <span class="item-text">Fresh
+                    Flowers</span></a></li>
+              <li><a href="/artificial-flowers"><i class="bi bi-pencil-square"></i> <span class="item-text">Artificial
+                    Flowers</span></a></li>
+              <li><a href="/wreath"><i class="bi bi-people"></i> <span class="item-text">Wreath black <br>and
+                    White</span></a></li>
+              <li><a href="/gifts-set"><i class="bi bi-book"></i> <span class="item-text">Gifts Set</span></a></li>
+              <li><a href="/balloon"><i class="bi bi-person-check"></i> <span class="item-text">Balloon</span></a></li>
+              <li><a href="/event"><i class="bi bi-envelope"></i> <span class="item-text">Event</span></a></li>
+            </ul>
+          </li>
+          <li><a href="#Recent-WorkS"> <span class="item-text">Recent Works</span></a></li>
+          <li class="mt-5">
+            <div class="social-media1">
+              <a href="https://www.facebook.com/yingyaiflower" target="_blank" class="ps-2">
+                <img src="./assets/icon/f.png" alt=""></a>
+              <a href="tel:094-552-8532" target="_blank" class="ps-2">
+                <img src="./assets/icon/callwhite.png" alt="">
+              </a>
+              <a href="https://instagram.com/yingyaiflower?igshid=YzA2ZDJiZGQ=" target="_blank" class="ps-2">
+                <img src="./assets/icon/ig.png" alt="">
+              </a>
+              <a href="https://lin.ee/RfKmZEH" target="_blank" class="ps-2">
+                <img src="./assets/icon/linewhite.png" alt="">
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <button class="navbar-toggler bg-dark me-4 mt-2" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+  </nav>
+</div>
+
+<div class="sidebar-nav " *ngIf="isDesktopDevice || isTablet">
+  <nav class="navbar navbar-dark shadow-5-strong fixed-top d-flex justify-content-end ">
+    <!-- <div class="container"> -->
+    <!-- Mobile Menu Toggle Button -->
+    <!-- Menus List -->
+    <div class="offcanvas offcanvas-end shadow bg-dark" tabindex="-1" id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-body">
+        <!-- <h3 >MENU</h3> -->
+        <ul class="navbar-nav">
+          <li><a href="#"><span class="item-text">Home</span></a></li>
+          <li><a href="#about-us"><span class="item-text">About us</span></a></li>
+          <li>
+            <span class="item-text" style="color: rgb(161, 174, 158); font-weight: bold;">Products</span>
+            <ul class="navbar-nav">
+              <li>
+                <a href="/fresh-flowers">
+                  <i class="bi bi-calendar3"></i>
+                  <span class="item-text">Fresh Flowers</span>
+                </a>
+              </li>
+              <li>
+                <a href="/artificial-flowers">
+                  <i class="bi bi-pencil-square"></i>
+                  <span class="item-text">Artificial Flowers</span>
+                </a>
+              </li>
+              <li><a href="/wreath"><i class="bi bi-people"></i> <span class="item-text">Wreath black and
+                    White</span></a></li>
+              <li><a href="/gifts-set"><i class="bi bi-book"></i> <span class="item-text">Gifts Set</span></a></li>
+              <li><a href="/balloon"><i class="bi bi-person-check"></i> <span class="item-text">Balloon</span></a></li>
+              <li><a href="/event"><i class="bi bi-envelope"></i> <span class="item-text">Event</span></a></li>
+            </ul>
+          </li>
+          <li><a href="#Recent-Works"> <span class="item-text">Recent Works</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="d-flex row me-5 fw-bold section-button ">
+      <div class="col-8 d-flex justify-content-center align-items-center">
+        MENU
+      </div>
+      <div class="col-4 m-0 p-0" >
+        <button class="navbar-toggler bg-dark " type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- </div> -->
+  </nav>
+</div>
+
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>

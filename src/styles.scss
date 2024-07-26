@@ -1,0 +1,263 @@
+/* You can add global styles to this file, and also import other style files */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+html, body{
+  font-family: 'Prompt', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+// #banner{
+//   background: linear-gradient(rgba(0, 0, 0, 0.5),#0000), url(./assets/product/banner-main.png);
+//   // filter: brightness(70%);
+//   background-size: cover;
+//   background-position: center;
+//   height: 100vh;
+//   overflow: hidden;
+// }
+
+#banner{
+  background: linear-gradient(rgba(0, 0, 0, 0.5),#0000), url(./assets/product/banner-main-2.png);
+  // filter: brightness(70%);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.social-media{
+  position: absolute;
+  left: 10%;
+  top: 15px;
+}
+
+.social-media a{
+  padding-right: 20px;
+}
+
+.social-media img{
+  border-radius: 50%;
+  width: 20px;
+}
+
+
+
+
+.banner-btn{
+  margin: 70px auto 0;
+}
+
+.banner-btn a{
+  width: 150px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 0;
+  color: #fff;
+  border: .5px solid #fff;
+  position: relative;
+  z-index: 1;
+  transition: color 0.5s;
+}
+
+.banner-btn a span{
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.banner-btn a:hover span{
+  width: 100%;
+}
+
+.banner-btn a:hover {
+  color: #000;
+}
+
+#sidenav{
+  width: 250px;
+  position: fixed;
+  right: -250px;
+  top: 0;
+  background: rgb(255, 255, 255);
+  z-index: 2;
+  transition: 0.5s;
+}
+
+nav ul li{
+  list-style: none;
+  margin: 5px 20px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #000;
+}
+
+.text-menu{
+  width: 50px;
+  height: 50px;
+  // background: rgb(225, 225, 225);
+  text-align: center;
+  position: fixed;
+  right: 100px;
+  top: 45px;
+  border-radius: 3px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+#menubtn{
+  width: 50px;
+  height: 50px;
+  // background: rgb(225, 225, 225);
+  text-align: center;
+  position: fixed;
+  right: 46px;
+  top: 32px;
+  border-radius: 3px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+#menubtn img{
+  width: 20px;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 770px){
+  .banner-text h1{
+    font-size: 44px;
+  }
+  .banner-btn a{
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+// #section05 a {
+//   padding-top: 70px;
+// }
+// #section05 a span {
+//   position: absolute;
+//   top: 80%;
+//   left: 50%;
+//   width: 24px;
+//   height: 24px;
+//   // margin-left: -12px;
+//   border-left: 2px solid #b7bf64;
+//   border-bottom: 2px solid #b7bf64;
+//   -webkit-transform: rotate(-45deg);
+//   transform: rotate(-45deg);
+//   -webkit-animation: sdb05 2s infinite;
+//   animation: sdb05 2s infinite;
+//   box-sizing: border-box;
+// }
+// @-webkit-keyframes sdb05 {
+//   0% {
+//     -webkit-transform: rotate(-45deg) translate(0, 0);
+//     opacity: 0;
+//   }
+//   50% {
+//     opacity: 1;
+//   }
+//   100% {
+//     -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+//     opacity: 0;
+//   }
+// }
+// @keyframes sdb05 {
+//   0% {
+//     transform: rotate(-45deg) translate(0, 0);
+//     opacity: 0;
+//   }
+//   50% {
+//     opacity: 1;
+//   }
+//   100% {
+//     transform: rotate(-45deg) translate(-20px, 20px);
+//     opacity: 0;
+//   }
+// }
+
+
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #FFF;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid white;
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(208, 208, 208);
+}
+
+a:active {
+  color: rgb(128, 128, 128);
+}
+
